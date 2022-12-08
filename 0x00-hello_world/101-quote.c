@@ -1,9 +1,9 @@
-#include<stdio.h>
 #include<unistd.h>
 /**
  *
- * main - Entry
- * return: 1
+ * main - prints exactly and piece of art is useful
+ *
+ * return: 0 (Success)
  */
 int main(void)
 {
