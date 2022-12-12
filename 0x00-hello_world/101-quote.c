@@ -1,9 +1,8 @@
 #include<unistd.h>
 /**
- *
  * main - prints exactly and piece of art is useful
  *
- * return: 0 (Success)
+ * return: Always 0 (Success)
  */
 int main(void)
 {
