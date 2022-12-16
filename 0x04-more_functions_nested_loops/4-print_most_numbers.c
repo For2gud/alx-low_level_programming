@@ -2,19 +2,17 @@
 
 /**
  * print_most_numbers - print the numbers 0 to 9
- * without 2 and 4
- * Return: Always 0
+ * (neither 2 nor 4).
+ * Return: no return.
  */
 void print_most_numbers(void)
 {
-	int a = 0;
+	int ch;
 
-	while (a < 10)
+	for (ch = 48; ch < 58; ch++)
 	{
-		if ( a != 2 && a != 4)
-			_putchar(a + '0');
-
-		a++
+		if (ch != 50 && ch != 52)
+			_putchar(ch);
 	}
 	_putchar('\n');
 }
