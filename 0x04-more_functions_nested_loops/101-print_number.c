@@ -1,26 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_number - prints int with putchar
- * @n: takes number, hello
- * Return: void
+ * print_number - prints an integer
+ * @n:.input integer parameter
+ *
+ * owned by Fortune Joseph/For2gud
  */
-
 void print_number(int n)
 {
-	unsigned int n;
+	unsigned int i = n;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		m = -n;
+		_putchar(45);
+		i = -i;
 	}
-	else
+	if (i / 10)
 	{
-		m = n;
+		print_number(i / 10);
 	}
-	if (m / 10 !=0)
-		print_number(m / 10);
-	_putchar((m % 10) + '0')
+	_putchar(i % 10 + '0');
 }
