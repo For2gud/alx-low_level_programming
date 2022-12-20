@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * reset_to_98 - set value in memory location to 98
  * @n: parameter
