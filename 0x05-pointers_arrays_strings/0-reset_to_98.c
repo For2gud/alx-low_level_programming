@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * reset_to_98 - takes the pointer and updates the value of n to 98
- * @n: int to check
+ * reset_to_98 - set value in memory location to 98
+ * @n: parameter
  * owned by Fortune Joseph/For2gud
- * Return: n is success
+ * Return: void
  */
 
 void reset_to_98(int *n)
