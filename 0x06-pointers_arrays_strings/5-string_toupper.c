@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 /**
  * string_toupper - change lowercase to uppercase
  * @s:string
@@ -11,7 +11,7 @@ char *string_toupper(char *s)
 	i = 0;
 	while (*(s + i))
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (*(s + i) >= 'a' && *(s + i) <= 'Z')
 			*(s + i) -= 'a' - 'A';
 		i++;
 	}
