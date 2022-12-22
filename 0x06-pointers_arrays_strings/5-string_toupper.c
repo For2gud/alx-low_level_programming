@@ -1,25 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * string_toupper - reverse array
- *
- * @s: string to change to upper
- *
- * Return: uper string
+ * string_toupper - change lowercase to uppercase
+ * @s:string
+ * Return:char
  */
-
 char *string_toupper(char *s)
 {
-	int i = 0;
 
-	while (s[i] != '\0')
+	int i;
+
+i = 0;
+	while (*(s + i))
 	{
-		if (s[i] >= 97 && s[i] <= 122)
-		{
-			s[i] = s[i] - 32;
-		}
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
 		i++;
 	}
 	return (s);
 }
+/* For2gud */
