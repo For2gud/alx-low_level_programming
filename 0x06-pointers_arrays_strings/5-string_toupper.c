@@ -1,20 +1,24 @@
 #include "main.h"
 
 /**
- * string_toupper - changes lowercase to uppercase
- * @n: pointer
- * Return: char
+ * string_toupper - reverse array
+ *
+ * @s: string to change to upper
+ *
+ * Return: uper string
  */
-char *string_toupper(char *n)
-{
-	int i;
 
-	i = 0;
-	while (n[i] != '\0')
+char *string_toupper(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
 	{
-		for (n[i] >= 'a' && n[i] <= 'z')
-			n[i] = n[i] - 32;
+		if (s[i] >= 97 && s[i] <= 122)
+		{
+			s[i] = s[i] - 32;
+		}
 		i++;
 	}
-	return (n);
+	return (s);
 }
